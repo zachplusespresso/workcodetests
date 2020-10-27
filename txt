@@ -79,4 +79,22 @@ if __name__ == '__main__':
         fptr.write(str(result) + '\n')
 
     fptr.close()
+-------------------------------------------------------------------------------------------------------
+
+class PopPush:
+    def __init__(self, name):
+        self.name = name
+        self.list1 = []
+    
+    def pop1(self, pop):
+        self.list1.append(pop)
+    def push(self, len1):
+        self.list1.remove(len1)
+        
+d = PopPush('A')
+d.pop1(1)
+d.pop1(2)
+d.push(len(d.list1))
+print(d.list1)
+
 
